@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Team;
-use App\Models\Players;
+use App\Models\Player;
 use App\Http\Requests\CreateTeamRequest;
 use App\Http\Requests\UpdateTeamRequest;
 
@@ -16,7 +16,7 @@ class TeamsController extends Controller
     public function players(Team $team)
     {
         try {
-            $players = Players::where('team_id', '=', $team->id)->get()
+            $players = Player::where('team_id', '=', $team->id)->get();
         } catch (\Exception $e) {
             return response()->json([], 400);
 
@@ -97,7 +97,6 @@ class TeamsController extends Controller
     {
         try {
             \DB::transaction(function () use ($id) {
-                TeamPlayer::where('team_id', $id)->delete();
                 Team::destroy($id);
             });
         } catch (\Exception $e) {

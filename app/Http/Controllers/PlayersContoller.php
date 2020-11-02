@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Player;
-use App\Models\TeamPlayer;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreatePlayerRequest;
 use App\Http\Requests\UpdatePlayerRequest;
@@ -16,7 +15,7 @@ class PlayersController extends Controller
     public function index()
     {
         try {
-            $players = Player::all();
+            $players = Player::orderBy('first_name')->orderBy('last_name')->get();
         } catch (\Exception $e) {
             return response()->json([], 400);
         }
@@ -49,10 +48,10 @@ class PlayersController extends Controller
         try {
             $player = \DB::transaction(function () use ($request, $player) {
                 $playerRequest = $request->get('player');
-                $teamId = $request->get('team_id');
 
                 $firstName = $playerRequest['first_name'];
                 $lastName = $playerRequest['last_name'];
+                $teamId = $playerRequest['team_id'];
 
                 $player->first_name = $firstName;
                 $player->last_name = $lastName;

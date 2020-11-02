@@ -20,22 +20,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56284cb5-e5f9-4047-9e0a-fbed4f918057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayersContoller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamsContoller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreatePlayerRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateTeamRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdatePlayerRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateTeamRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/MainApp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/auth/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/players/NewPlayer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/players/Player.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/players/PlayersHome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/players/PlayersList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/teams/NewTeam.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/teams/Team.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/teams/TeamsHome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/teams/TeamsList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/users/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/helpers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlayersContoller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayersContoller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeamsContoller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamsContoller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +85,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/assets/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,6 +97,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/assets/js" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/database/seeds" />
       <recent name="$PROJECT_DIR$" />
@@ -83,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604332973449</updated>
-      <workItem from="1604332975824" duration="5826000" />
+      <workItem from="1604332975824" duration="15890000" />
     </task>
     <servers />
   </component>
@@ -99,21 +126,21 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="720" y="237" key="NewPhpClassDialog" timestamp="1604338311815">
+    <state x="720" y="237" key="NewPhpClassDialog" timestamp="1604342971417">
       <screen x="0" y="23" width="1920" height="1017" />
     </state>
-    <state x="720" y="237" key="NewPhpClassDialog/-1280.23.1280.777/0.23.1920.1017@0.23.1920.1017" timestamp="1604338311815" />
+    <state x="720" y="237" key="NewPhpClassDialog/-1280.23.1280.777/0.23.1920.1017@0.23.1920.1017" timestamp="1604342971417" />
     <state x="783" y="462" key="NewPhpFileDialog" timestamp="1604338790454">
       <screen x="0" y="23" width="1920" height="1017" />
     </state>
     <state x="783" y="462" key="NewPhpFileDialog/-1280.23.1280.777/0.23.1920.1017@0.23.1920.1017" timestamp="1604338790454" />
-    <state x="667" y="286" width="586" height="490" key="find.popup" timestamp="1604338549157">
+    <state x="637" y="235" width="586" height="518" key="find.popup" timestamp="1604348710362">
       <screen x="0" y="23" width="1920" height="1017" />
     </state>
-    <state x="667" y="286" width="586" height="490" key="find.popup/-1280.23.1280.777/0.23.1920.1017@0.23.1920.1017" timestamp="1604338549157" />
-    <state x="625" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1604338407774">
+    <state x="637" y="235" width="586" height="518" key="find.popup/-1280.23.1280.777/0.23.1920.1017@0.23.1920.1017" timestamp="1604348710362" />
+    <state x="625" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1604348131441">
       <screen x="0" y="23" width="1920" height="1017" />
     </state>
-    <state x="625" y="248" width="670" height="676" key="search.everywhere.popup/-1280.23.1280.777/0.23.1920.1017@0.23.1920.1017" timestamp="1604338407774" />
+    <state x="625" y="248" width="670" height="676" key="search.everywhere.popup/-1280.23.1280.777/0.23.1920.1017@0.23.1920.1017" timestamp="1604348131441" />
   </component>
 </project>
