@@ -14,6 +14,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'auth'], function ($router) {
+    Route::post('login', 'AuthController@login');
+    Route::post('logout', 'AuthController@logout');
+});
+
+Route::post('register', 'Auth\RegisterController@create');
+
+Route::group(['middleware' => 'token.auth'], function ($router) {
+    Route::get('teams/{team}/players', 'TeamsController@players');
+    Route::get('teams', 'TeamsController@index');
+    Route::post('teams/{team}', 'TeamsController@update');
+    Route::post('teams', 'TeamsController@store');
+    Route::get('teams/{id}', 'TeamsController@show');
+    Route::delete('teams/{id}', 'TeamsController@delete');
+
+    Route::get('players', 'PlayersController@index');
+    Route::post('players/{player}', 'PlayersController@update');
+    Route::post('players', 'PlayersController@store');
+    Route::get('players/{id}', 'PlayersController@show');
+    Route::delete('players/{id}', 'PlayersController@delete');
 });

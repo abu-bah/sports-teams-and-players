@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Team;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,7 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(TeamsTableSeeder::class);
-        $this->call(PlayersTableSeeder::class);
+        $this->call([
+            TeamsTableSeeder::class,
+            PlayersTableSeeder::class
+        ]);
     }
 }
